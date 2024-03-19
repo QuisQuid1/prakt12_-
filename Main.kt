@@ -1,0 +1,13 @@
+import kotlinx.coroutines.*
+suspend fun main()
+{
+    var Class:class1=class1()
+    var k=Class.Input()
+    GlobalScope.launch {
+        for (i in 1..k){
+            println("$i раз")
+            Class.Zapravka()
+        }
+    }
+    runBlocking { delay(30000) }
+}
